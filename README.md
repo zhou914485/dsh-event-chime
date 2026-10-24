@@ -45,7 +45,7 @@ Map<sessionId, { running, pendingInteraction, completionUnread }>
 ## 安装
 
 ```bash
-git clone https://github.com/Jingbo-Zhou/dsh-event-chime.git
+git clone https://github.com/zhou914485/dsh-event-chime.git
 ```
 
 装进 DSH 有两种方式：
