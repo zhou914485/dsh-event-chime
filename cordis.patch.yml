@@ -1,0 +1,4 @@
+# dsh-event-chime bundle：Host half 为空，全部逻辑在 client。
+- insert:
+    - id: dsh-event-chime
+      name: '@local/dsh-event-chime'

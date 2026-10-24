@@ -1,0 +1,33 @@
+{
+  "name": "@local/dsh-event-chime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 事件提示音：完成 / 授权 / 提问 / 计划评审等事件各有独立音频池，池内洗牌轮换，没音频时用内置合成音兜底。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "meta": {
+    "title": "事件提示音",
+    "description": "给 DSH 的完成 / 授权 / 提问 / 计划评审等事件配提示音，每类事件一个音频池，池内洗牌轮换。"
+  }
+}
